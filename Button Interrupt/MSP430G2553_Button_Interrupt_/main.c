@@ -1,3 +1,9 @@
+/* 
+  Author Eric Schroeder
+  Written: September 24, 2018
+  Last Updated:September 26, 2018 */
+
+
 #include <msp430.h>
 
 void main(void)
