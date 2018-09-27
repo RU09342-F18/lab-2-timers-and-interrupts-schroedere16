@@ -31,13 +31,13 @@ __interrupt void Port_1(void)
 {
     if(P1IES & BIT3){
         TACTL = TACLR;                  //clears the clock
-        TACTL = TASSEL_1 + MC_2 + ID_3; //sets clock to continuous mode
-        P1IES &= ~BIT3;                 //clears
+        TACTL = TASSEL_1 + MC_2 + ID_3; //sets ACLK to continuous mode and divided by 8
+        P1IES &= ~BIT3;                 //clears interrupt flag for P1.3
     }
     else{
         TACCR0 = TA0R;
-        TACTL = TASSEL_1 + MC_1 +ID_3;  //sets clock back to up mode
+        TACTL = TASSEL_1 + MC_1 +ID_3;  //sets ACLK to up mode and divided by 8
         P1IES |= BIT3;
     }
-    P1IFG &= ~BIT3;                     // Resets interrupt flag for P1.3
+    P1IFG &= ~BIT3;                     //clears interrupt flag for P1.3
 }
