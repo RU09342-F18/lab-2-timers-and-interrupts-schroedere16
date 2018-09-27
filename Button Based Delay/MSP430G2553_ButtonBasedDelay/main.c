@@ -10,7 +10,7 @@ int main(void)
     WDTCTL = WDTPW | WDTHOLD;           // Disable the watchdog timer
     BCSCTL3 = LFXT1S_2;                 // Makes ACLK use crystal as opposed to internal oscillator
     P1OUT |= BIT3;                      // Connects internal resistor to power (making it a pull-up)
-    P1DIR |= BIT0;                      // Set P1. (Green LED) to output
+    P1DIR |= BIT0;                      // Set P1.0 (Green LED) to output
     P1REN |= BIT3;                      // Enable internal resistor
     P1IE |= BIT3;                       // Set P1.3 as interrupt pin (interrupts are triggered w/ changes to this pin)
     P1IES |= BIT3;                      // Set P1.3 to interrupt on falling edge high to low transition
