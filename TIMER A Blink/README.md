@@ -4,7 +4,7 @@ These codes will blink two LEDs on a board at two different speeds. These codes 
 ## MSP430G2553 
 
 
-## MSP430F5529
+## MSP430FR2311
 
 
 * Author: Eric Schroeder
