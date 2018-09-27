@@ -1,8 +1,10 @@
 # Button Interrupt
-Last lab you were introduced to the idea of "Polling" where in you would constantly check the status of the P1IN register to see if something has changed. While your code may have worked, it ends up spending a ton of time just checking something that has not changed. What we can do instead is use another two registers available to us from the GPIO peripheral, P1IE and P1IES, to allow our processor to just chill out and wait until something happens to act upon it. Without spending too much space on this README with explanations, what makes these interrupts tick is the following code:
-
+These codes are button based interrupts. These codes simply turn a specific LED on when a button is pressed then turn back off once the button is pressed again. Although these are done using interrupts rather than using simple polling. An interrupt waits for an input or ouput and once it recieves it the interrupt will begin to run its set of code. For this case the interrupt is waiting for the button to be pressed to turn on the LED and once it is pressed again the interrupt will begin again turning the LED back off. These codes rely on the <msp430.h> library. 
 
 ## MSP430G2553
+The code for this processor follows the processor previously mentioned. When the button is pressed the green LED will be lit and once pressed again the LED will turn off. The reset is also enabled for this code; however it will only reset the power source. For example initially the LED is off and if the button is pressed the LED will become lit then if the reset is pressed the LED will be off until the reset is released. At which point the LED will turn on and remain on until the button is pressed again. 
+
+## MSP432P401R
 
 
 * Author: Eric Schroeder
