@@ -5,6 +5,6 @@ Last lab you were introduced to the idea of "Polling" where in you would constan
 ## MSP430G2553
 
 
-Author: Eric Schroeder
-Written September 27, 2018
-Last Updated: September 27, 2018
+* Author: Eric Schroeder
+* Written September 27, 2018
+* Last Updated: September 27, 2018
