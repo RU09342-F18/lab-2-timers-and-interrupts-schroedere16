@@ -5,8 +5,8 @@ These codes are button based interrupts. These codes simply turn a specific LED 
 The code for this processor follows the processor previously mentioned. When the button is pressed the green LED will be lit and once pressed again the LED will turn off. The reset is also enabled for this code; however it will only reset the power source. For example initially the LED is off and if the button is pressed the LED will become lit then if the reset is pressed the LED will be off until the reset is released. At which point the LED will turn on and remain on until the button is pressed again. 
 
 ## MSP432P401R
-The code for this processor is much different than the code for the previous processor. This is mainly due to a syntax difference between the boards. Although the functionality is identically across the boards. The code for this processor was found using TI resource explorer.
+The code for this processor is much different than the code for the previous processor. This is mainly due to a syntax difference between the boards but the functionality is identically across the boards. The code for this processor was found using TI resource explorer.
 
 * Author: Eric Schroeder
-* Written September 27, 2018
+* Written: September 27, 2018
 * Last Updated: September 28, 2018
